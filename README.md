@@ -49,7 +49,7 @@ XGBoost Modeli, gradient boosting algoritmasını optimize ederek daha iyi perfo
 ## Sonuçlar
 Projede kullanılan beş farklı makine öğrenimi modeli, yaşam beklentisi tahminini başarıyla gerçekleştirmiştir. Modellerin performansları, doğru parametrelerle optimize edilerek test edilmiştir. Sonuçlar görselleştirildiğinde:
 
--XGBoost Modeli en yüksek doğrulukla tahminler sağlamıştır.
+- XGBoost Modeli en yüksek doğrulukla tahminler sağlamıştır.
 -Random Forest Modeli de başarılı bir performans sergileyerek güvenilir tahminler üretmiştir.
 -Diğer modeller de (Linear Regression, KNN, SVR) yaşam beklentisi tahmininde başarılı olmuş, ancak XGBoost ve Random Forest daha yüksek doğruluklar elde etmiştir.
 Bu bulgular, yaşam beklentisi tahmini gibi karmaşık problemlerde güçlü ve esnek makine öğrenimi modellerinin kullanımının önemini vurgulamaktadır.
