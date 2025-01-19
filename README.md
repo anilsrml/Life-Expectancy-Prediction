@@ -8,7 +8,7 @@ Bu proje, yaşam beklentisi tahminini gerçekleştiren bir makine öğrenimi mod
 Veri seti üzerinde aşağıdaki işlemler gerçekleştirilmiştir:
 - **Eksik Verilerin Doldurulması:** Boşluklar null değerlerle doldurulmuştur.
 - **Outlier İşlemi:** Anormal veriler tespit edilip gerekli işlemler uygulanmıştır.
--  **Label Encoding İşlemi** Kategorik verilerin sayısal verilere dönüştürülmesi.
+-  **Label Encoding İşlemi:** Kategorik verilerin sayısal verilere dönüştürülmesi.
 
 ### 2. Korelasyon Analizi ve Görselleştirme
 Veri setindeki değişkenler arasındaki ilişkiler korelasyon analizi ile incelenmiş ve sonuçlar bir histogram grafiği ile görselleştirilmiştir.
