@@ -23,20 +23,26 @@ Aşağıdaki beş farklı makine öğrenimi modeli kullanılmıştır:
 
 ## Model Grafiklerinin Açıklamaları:
 
-**Linear Regression Modeli**  
-Linear Regression Modeli, bağımsız değişkenler ile bağımlı değişken arasındaki doğrusal ilişkiyi analiz eder. Grafikte, gerçek değerler ile tahmin edilen değerler arasındaki ilişkiyi görselleştiririz. Grafikteki noktaların doğrusal bir çizgi etrafında yoğunlaşması modelin iyi bir performans sergilediğini gösterir.
+**Linear Regression Modeli**
 
-**Random Forest Modeli**  
-Random Forest Modeli, birden fazla karar ağacı kullanarak daha güvenilir tahminler yapar. Grafikte, gerçek değerler ile tahmin edilen değerler arasındaki ilişkiyi görselleştiririz. Grafik, modelin karmaşıklığını ve genel performansını gösterir. Noktaların doğrusal bir çizgi etrafında yoğunlaşması modelin iyi bir performans sergilediğini gösterir.
+Linear Regression, bağımsız ve bağımlı değişkenler arasındaki doğrusal ilişkiyi analiz eder. Grafikte, gerçek ve tahmin edilen değerlerin ilişkisi gösterilir. Noktaların doğrusal bir çizgi etrafında yoğunlaşması, modelin iyi performans sergilediğini gösterir. Ancak doğrusal olmayan ilişkilerde performansı sınırlı olabilir.
 
-**K-Nearest Neighbors Modeli**  
-K-Nearest Neighbors Modeli, veri noktalarının komşularına dayanarak tahmin yapar. Grafikte, gerçek değerler ile tahmin edilen değerler arasındaki ilişkiyi görselleştiririz. Noktaların doğrusal bir çizgi etrafında yoğunlaşması modelin iyi bir performans sergilediğini gösterir. Ancak, bu modelin performansı genellikle veri setinin yapısına ve seçilen komşu sayısına bağlıdır.
+**Random Forest Modeli**
 
-**Support Vector Regression Modeli**  
-Support Vector Regression Modeli, hedef değişkeni en iyi temsil eden bir hiper düzlem bulmayı amaçlar. Grafikte, gerçek değerler ile tahmin edilen değerler arasındaki ilişkiyi görselleştiririz. Noktaların doğrusal bir çizgi etrafında yoğunlaşması modelin iyi bir performans sergilediğini gösterir. Model, marj içindeki hatayı minimize etmeye çalışır.
+Random Forest, birden fazla karar ağacı kullanarak tahmin yapar ve aşırı öğrenmeyi önler. Grafikte, gerçek ve tahmin edilen değerlerin yoğunlaşması modelin başarısını gösterir. Model dengeli tahminler sunsa da açıklanabilirliği düşüktür ve hiperparametre ayarları performansı etkiler.
 
-**XGBoost Modeli**  
-XGBoost Modeli, gradient boosting algoritmasını optimize ederek daha iyi performans sergiler. Grafikte, gerçek değerler ile tahmin edilen değerler arasındaki ilişkiyi görselleştiririz. Noktaların doğrusal bir çizgi etrafında yoğunlaşması modelin iyi bir performans sergilediğini gösterir. XGBoost, genellikle diğer modellerden daha yüksek doğruluk sağlar.
+**K-Nearest Neighbors (KNN) Modeli**
+
+KNN, veri noktalarının komşularına göre tahmin yapar. Grafikte, noktaların yoğunlaşması modelin doğruluğunu gösterir. Performans, komşu sayısına ve veri setinin yapısına bağlıdır. Büyük veri kümelerinde hesaplama maliyeti yükselebilir.
+
+**Support Vector Regression (SVR) Modeli**
+
+SVR, veriyi en iyi temsil eden hiper düzlemi oluşturarak tahmin yapar. Grafikte, noktaların yoğunlaşması modelin başarısını gösterir. SVR, küçük veri kümelerinde iyi çalışsa da büyük veri setlerinde hesaplama süresi artabilir.
+
+**XGBoost Modeli**
+
+XGBoost, karar ağaçlarını optimize eden güçlü bir algoritmadır. Grafikte, noktaların doğrusal bir çizgi etrafında yoğunlaşması modelin başarısını gösterir. Büyük veri setlerinde yüksek doğruluk sağlar ancak hiperparametre ayarları dikkatli yapılmalıdır.
+
 
 ## Kullanılan Kütüphaneler
 - Pandas
