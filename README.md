@@ -12,29 +12,29 @@ Veri seti üzerinde aşağıdaki işlemler gerçekleştirilmiştir:
 
 Outlier işlemi bir veri setindeki aykırı (uç) değerleri tespit etmek ve belirlenen sınırlar içinde düzelterek temizlemek amacıyla kullanılır. İşlem adımları şu şekildedir:
 
-### 1. Veri Setinin Bölünmesi
+#### 1. Veri Setinin Bölünmesi
 Kodun başında veri seti, eğitim (df_train) ve test (df_test) olarak ikiye ayrılır. train_test_split fonksiyonu, veriyi %80 eğitim ve %20 test oranında böler. random_state=42 parametresi, aynı sonuçların tekrar üretilebilmesi için rastgelelik kontrolünü sağlar. Böylece modelin farklı çalıştırmalarda tutarlı sonuçlar vermesi sağlanır.
 
-**2. Aykırı Değer Sınırlarının Hesaplanması**
+#### 2. Aykırı Değer Sınırlarının Hesaplanması
 Aykırı değerleri belirlemek için her sütunun birinci (Q1, %25) ve üçüncü (Q3, %75) çeyrek dilimleri hesaplanır. Bu çeyrekler arası fark (IQR) kullanılarak aykırı değer sınırları belirlenir. Aykırı değerler, aşağıdaki formüllerle bulunur:
 
 Alt sınır: Q1 - 1.5 * IQR
 Üst sınır: Q3 + 1.5 * IQR
 Bu hesaplamalar, verinin dağılımına bağlı olarak aşırı düşük veya yüksek değerleri tespit etmek için kullanılır.
 
-**3. Aykırı Değerleri Düzenleme**
+#### 3. Aykırı Değerleri Düzenleme
 Tespit edilen alt ve üst sınırlar kullanılarak, aykırı değerler sınırlar içine çekilir. Eğer bir değer alt sınırdan küçükse alt sınıra, üst sınırdan büyükse üst sınıra eşitlenir. Bu işlem, hem eğitim (df_train) hem de test (df_test) veri setlerine uygulanır. Böylece modelin tutarlı verilere dayanarak öğrenmesi sağlanır.
 
-**4. Aykırı Değerlerin Yüzdesinin Hesaplanması**
+#### 4. Aykırı Değerlerin Yüzdesinin Hesaplanması
 Her bir sütun için aykırı değer yüzdesi hesaplanır. İlk olarak sütunun aykırı değer sınırları belirlenir, ardından bu sınırların dışına çıkan değerler sayılır. Tespit edilen aykırı değerlerin veri kümesindeki toplam gözlem sayısına oranı yüzdelik olarak hesaplanır. Bu işlem, veri temizleme sürecinin etkinliğini değerlendirmek için yapılır.
 
-**5. Sayısal Sütunların Seçilmesi**
+#### 5. Sayısal Sütunların Seçilmesi
 Aykırı değer işlemi yalnızca sayısal sütunlara uygulanmaktadır. Bu nedenle select_dtypes fonksiyonu kullanılarak sayısal veriler seçilir. Ayrıca, analiz açısından uygun olmadığı için "Year" sütunu listeden çıkarılır.
 
-**6. Aykırı Değer Analizi Öncesi ve Sonrası Karşılaştırma**
+#### 6. Aykırı Değer Analizi Öncesi ve Sonrası Karşılaştırma
 Kod, her sütun için aykırı değer yüzdesini aykırı değerlerin düzeltilmesinden önce ve sonra hesaplayarak ekrana yazdırır. Böylece uygulanan düzeltme işleminin etkisi gözlemlenir.
 
-**Sonuç:**
+#### Sonuç:
 Kod çalıştırıldığında önce mevcut aykırı değer yüzdesi hesaplanır ve ekrana yazdırılır. Daha sonra aykırı değerler alt ve üst sınırlarla düzeltilir. Son olarak, tekrar aykırı değer yüzdesi hesaplanarak düzenleme işleminin ne kadar etkili olduğu analiz edilir.
 
 ### 2. Korelasyon Analizi ve Görselleştirme
