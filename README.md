@@ -12,7 +12,7 @@ Veri seti üzerinde aşağıdaki işlemler gerçekleştirilmiştir:
 
 Outlier işlemi bir veri setindeki aykırı (uç) değerleri tespit etmek ve belirlenen sınırlar içinde düzelterek temizlemek amacıyla kullanılır. İşlem adımları şu şekildedir:
 
-##**1. Veri Setinin Bölünmesi**
+###1. Veri Setinin Bölünmesi
 Kodun başında veri seti, eğitim (df_train) ve test (df_test) olarak ikiye ayrılır. train_test_split fonksiyonu, veriyi %80 eğitim ve %20 test oranında böler. random_state=42 parametresi, aynı sonuçların tekrar üretilebilmesi için rastgelelik kontrolünü sağlar. Böylece modelin farklı çalıştırmalarda tutarlı sonuçlar vermesi sağlanır.
 
 **2. Aykırı Değer Sınırlarının Hesaplanması**
