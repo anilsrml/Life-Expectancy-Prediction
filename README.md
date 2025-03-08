@@ -89,4 +89,3 @@ Projede kullanılan beş farklı makine öğrenimi modeli, yaşam beklentisi tah
 Bu bulgular, yaşam beklentisi tahmini gibi karmaşık problemlerde güçlü ve esnek makine öğrenimi modellerinin kullanımının önemini vurgulamaktadır.
 
 
-Youtube linki => https://youtu.be/Zk5A_Cml_gE
